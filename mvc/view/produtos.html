@@ -1,0 +1,25 @@
+<section>
+
+    <h1 id="titulo">Produtos</h1>
+    <br>
+
+    {% for produto in produto %}
+
+    <hr>
+
+        <article>
+            <header>
+                <!--Nome-->
+                <h1><a href="http://localhost/startbootstrap-sb-admin-2-master/produtos/index/{{produto.id}}">{{produto.nome}}</a></h1>
+            </header>
+                <!--Descricao-->
+                <p>{{produto.descricao}}</p>
+                <!--Valor-->
+                <p>R${{produto.valor}}.</p>
+        </article>
+
+    <hr>
+
+    {% endfor %}
+
+</section>

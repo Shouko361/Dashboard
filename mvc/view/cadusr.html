@@ -1,0 +1,28 @@
+<h2 id="titulo">Cadastro de Usuário</h2>
+
+<br><br>
+
+<!-- Cadastrar / Alterar usuario -->
+<section id="cadastro-usr">
+
+    <form action="http://localhost/startbootstrap-sb-admin-2-master/cadusr/cadastrar" method="POST" id="cadastro-usr">
+
+        <input id="nome" type="text" name="nome" required id="nome" placeholder="Nome" value=""><br>
+
+        <input id="email" type="email" name="email" required placeholder="Email" value=""><br>
+
+        <input type="password" placeholder="Senha" name="senha" title="A senha deve conter 8 caracteres, incluindo 1 letra maiúscula, 1 letra minúscula e caracteres numéricos" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><br>
+        <br>
+        <input id="senha" type="password" name="senha" placeholder="Confirmar senha" title="A senha deve conter 8 caracteres, incluindo 1 letra maiúscula, 1 letra minúscula e caracteres numéricos" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><button type="button" id="botao" class="far fa-eye-slash" onclick="mostrarSenha()"></button><br>
+        <br>
+        <div class="progress">
+            <div id="progressbar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+            </div>
+
+        </div><br><br>
+                
+        <input type="submit" value="Cadastrar">
+
+    </form>
+
+</section>
